@@ -16,6 +16,8 @@
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Milan Presse 
     </author>
+    
+    <access origin="*" subdomains="true"/>
 
 
 <!-- <feature name="debug-server" required="true">
@@ -23,4 +25,3 @@
     <param name="key" value="com.milanpresse.xbtest1"/>
   </feature>
  --></widget>
- <access origin="*" subdomains="true"/>
