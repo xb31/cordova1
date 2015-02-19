@@ -1,0 +1,130 @@
+<MilanWeb>
+  <BackOffice>
+    <ModuleInfo id="MOD000_00" src="MOD000_00.swf" type="swfResExterne" width="800" height="600">
+      <Xml id="XML_MOD000_00" src="XML_MOD000_00.xml"/>
+    </ModuleInfo>
+    <Presentation>U</Presentation>
+    <Credits>
+      <CR00>Titre§Toboclic n° 132 : Tes masques de monstres</CR00>
+      <CR01>Scénario§Florence Blanquart</CR01>
+      <CR02>Texte§Florence Blanquart</CR02>
+      <CR03>Traduction§</CR03>
+      <CR04>Expertise§</CR04>
+      <CR05>Illustrations§Stéphanie Lim</CR05>
+      <CR06>Animations§</CR06>
+      <CR07>Graphisme§Stéphanie Lim</CR07>
+      <CR08>Photos§</CR08>
+      <CR09>Vidéos§</CR09>
+      <CR10>Musique§Vincent Guigue</CR10>
+      <CR11>Studio d'enregistrement§Élixir, Saint-Jean (Toulouse)</CR11>
+      <CR12>Voix§Lucile Barbier, Catherine Pauwels</CR12>
+      <CR13>Intégration§Juliette Delporte</CR13>
+      <CR14>Programmation§Xavier Boisnon</CR14>
+      <CR15>Divers§</CR15>
+      <CR16>Remerciements§</CR16>
+    </Credits>
+    <Classification>
+      <Famille>Activité</Famille>
+      <Themes>Créativité</Themes>
+      <Tags>monstres,fabrique</Tags>
+    </Classification>
+  </BackOffice>
+  <Resources>
+    <ResourcesZip>
+      <Vignette>
+      </Vignette>
+      <FichePedas/>
+      <Goodies/>
+      <Textes/>
+      <AnimChargement>
+      </AnimChargement>
+       <Resource id="B_MOD000_00_B_DEMO_CLIC" src="B_MOD000_00/B_DEMO_CLIC.mp3" type="mp3" preload="true"/>
+      <Resource id="B_MOD000_00_B_DEMO_ROLL" src="B_MOD000_00/B_DEMO_ROLL.mp3" type="mp3" preload="true"/>
+      <Resource id="S_FR_MOD000_00_01" src="S_FR_MOD000_00/FAB171_00_01.mp3" type="mp3" preload="true"/>
+      <Resource id="S_FR_MOD000_00_02" src="S_FR_MOD000_00/FAB171_00_02.mp3" type="mp3" preload="true"/>
+      <Resource id="S_FR_MOD000_00_03" src="S_FR_MOD000_00/FAB171_00_03.mp3" type="mp3" preload="true"/>
+      <Resource id="S_FR_MOD000_00_04" src="S_FR_MOD000_00/FAB171_00_04.mp3" type="mp3" preload="true"/>
+      <Resource id="S_FR_MOD000_00_05" src="S_FR_MOD000_00/FAB171_00_05.mp3" type="mp3" preload="true"/>
+     </ResourcesZip>
+  </Resources>
+  <Module>
+    <StylesTextes>
+      <StylesTE>
+        <sTE id="TE">
+          <police>Comic Sans MS</police>
+          <corps>14</corps>
+          <justify>right</justify>
+          <bold>1</bold>
+          <italic>0</italic>
+          <underline>0</underline>
+          <couleurT>0xFFFFFE</couleurT>
+          <couleurF>0x6699FF</couleurF>
+          <opaciteF>70</opaciteF>
+        </sTE>
+      </StylesTE>
+      <StylesLM>
+        <sLM id="LM">
+          <police>billy</police>
+          <corps>22</corps>
+          <justify>left</justify>
+          <bold>0</bold>
+          <italic>0</italic>
+          <underline>0</underline>
+          <couleurT>0xF80A7B</couleurT>
+          <couleurF>0x000000</couleurF>
+          <opaciteF>0</opaciteF>
+          <sv>0</sv>
+          <fondFsv>4</fondFsv>
+          <action>1</action>
+          <lien>0</lien>
+        </sLM>
+      </StylesLM>
+      <StylesIB>
+        <sIB id="IB">
+          <police>Comic Sans MS</police>
+          <corps>12</corps>
+          <justify>left</justify>
+          <bold>0</bold>
+          <italic>0</italic>
+          <underline>0</underline>
+          <couleurT>0x000000</couleurT>
+          <couleurF>0xFFFFFE</couleurF>
+          <opaciteF>70</opaciteF>
+          <position>12</position>
+        </sIB>
+      </StylesIB>
+      <StylesST>
+        <sST id="ST">
+          <police>Comic Sans MS</police>
+          <corps>12</corps>
+          <justify>left</justify>
+          <bold>0</bold>
+          <italic>0</italic>
+          <underline>0</underline>
+          <couleurT>0x000000</couleurT>
+          <couleurF>0x6699FF</couleurF>
+          <opaciteF>50</opaciteF>
+        </sST>
+      </StylesST>
+    </StylesTextes>
+    <FR>
+      <Titres>
+        <te id="TE00">Tes masques de monstres</te>
+      </Titres>
+      <InfoBulles>
+        <ib id="IB00">Bienvenue</ib>
+      </InfoBulles>
+      <LegendesMedias>
+        <lm id="LM00">Bienvenue</lm>
+      </LegendesMedias>
+      <Sous-Titres>
+        <st id="ST01">Bienvenue</st>
+      </Sous-Titres>
+    </FR>
+    <Config>
+		<MenuFrame>1</MenuFrame>
+ 
+      <Hote preload_movie_path="MODULE_C/C_MOD000_00.swf" preload_movie_visible="yes" preload_movie_wait_time="0" preload_bar_visible="yes" pad_show="yes"/>
+    </Config>
+  </Module>
+</MilanWeb>

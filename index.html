@@ -1,1 +1,52 @@
-youps
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MODULE</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script>
+            var libs = "/DEV/xen-framework";
+            var xenPath = "/DEV/xen-framework";
+            var monitoring = true;
+        </script>
+<!-- MARCHE PAS (pb avec require) -->
+        <script src="libs/xen-framework/libs/createjs/index.js"></script>
+        <script src="libs/xen-framework/libs/movieclipjs/index.js"></script>
+        <script src="libs/xen-framework/libs/requirejs/index.js"></script>
+         <script src="libs/xen-framework/libs/jquery/index.js"></script>
+         <script src="libs/xen-framework/extras/libs/underscorejs/index.js"></script>
+
+        <script src="src/ckeditor/ckeditor.js"></script>
+        <script src="src/ckeditor/adapters/jquery.js"></script>
+        <script>CKEDITOR.disableAutoInline = true;</script>
+
+        <script src="libs/xen-framework/src/xen.js"></script>
+<script>
+    function sh(no){
+        xen.config.capsuleAlgo.bankShuffleAll()
+    }
+    function se(){
+        xen.config.capsuleAlgo.bankSelect(3)
+    }
+    function prec(){
+        xen.config.capsuleAlgo.bankSelectPrec()
+    }
+    function next(){
+        xen.config.capsuleAlgo.bankSelectNext()
+    }
+</script>
+    </head>
+    <body onload="xen.init('MP_createjs')"><!-- cf xen.js -->
+ <!--    <div style="text-align:right">
+    <button type="button" onclick="sh(0)">SHUFFLE1</button>
+    <button type="button" onclick="prec()">PREC</button>
+    <button type="button" onclick="next()">NEXT</button>
+    <button type="button" onclick="sh(1)">SHUFFLE2</button>
+    <button type="button" onclick=" xen.config.capsuleAlgo.bankSelect({itemIndex:2, transition:'curve'})">SELECT</button>
+    </div>
+ -->        
+        <div id="canvasHolder">
+            <canvas id="canvas" width="800" height="600"></canvas>
+        </div>
+    </body>
+</html>

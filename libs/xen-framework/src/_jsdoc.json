@@ -1,0 +1,32 @@
+{
+    "tags": {
+        "allowUnknownTags": true
+    },
+    "source": {
+        "include": [""],
+        "exclude": ["./snippets.js"],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "docs"
+    },
+    "plugins": [],
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": true,
+        "systemName": "xen API",
+        "footer": "",
+        "copyright": "2013",
+        "navType": "vertical",
+        "theme": "readable",
+        "linenums": true,
+        "collapseSymbols": false,
+        "inverseNav": false,
+        "outputSourceFiles": true 
+    },
+    "opts": {
+        "template": "C:\\jsdoc\\node_modules\\ink-docstrap\\template",
+        "encoding": "utf8",
+        "destination": "../docs",
+        "recurse": true,
+        "private": true
+    }
+}
