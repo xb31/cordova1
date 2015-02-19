@@ -41,9 +41,18 @@ this.xen = this.xen || {};
 		xhr = ( xhr == undefined ) ? true : xhr;
 		//xhr = false;
 		if ( xhr == true ) {
-			var loader = new createjs.LoadQueue( false, "", true );
-			loader.addEventListener( "fileload", callback );
-			loader.loadFile( xmlIdOrPath );
+			$.ajax({ 
+			type: "GET", 
+			url: xmlIdOrPath, 
+			dataType: "xml", 
+			success: function(event){
+				callback({result:event})
+			}, 
+			error: callback 
+
+			});		
+
+
 		} else {
 			if ( window.DOMParser ) {
 				var parser = new DOMParser();
@@ -60,6 +69,30 @@ this.xen = this.xen || {};
 
 		}
 	}
+
+	// Tools.loadXML = function( xmlIdOrPath, xhr, callback ) {
+	// 	xhr = ( xhr == undefined ) ? true : xhr;
+	// 	//xhr = false;
+	// 	if ( xhr == true ) {
+	// 		var loader = new createjs.LoadQueue( false, "", true );
+	// 		loader.addEventListener( "fileload", callback );
+	// 		loader.loadFile( xmlIdOrPath );
+	// 	} else {
+	// 		if ( window.DOMParser ) {
+	// 			var parser = new DOMParser();
+	// 			var xmlDoc = parser.parseFromString( window[ xmlIdOrPath ], "text/xml" );
+	// 		} else // Internet Explorer
+	// 		{
+	// 			var xmlDoc = new ActiveXObject( "Microsoft.XMLDOM" );
+	// 			xmlDoc.async = false;
+	// 			xmlDoc.loadXML( window[ xmlIdOrPath ] );
+	// 		}
+	// 		callback( {
+	// 			result: xmlDoc
+	// 		} );
+
+	// 	}
+	// }
 
 	xen.Tools = Tools;
 }() );
