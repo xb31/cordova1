@@ -1,0 +1,2 @@
+weinre --boundHost -all-
+PAUSE

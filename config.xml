@@ -19,6 +19,6 @@
 
 <feature name="debug-server" required="true">
     <param name="domain" value="http://192.168.0.12:8080"/>
-    <param name="key" value="billy"/>
+    <param name="key" value="com.milanpresse.xbtest1"/>
   </feature>
 </widget>
