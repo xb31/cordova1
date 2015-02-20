@@ -410,7 +410,7 @@ this.xen = this.xen || {};
     } );
 
     p._clickHandler = function( event, data ) {
-        console.log( "click " );
+        console.log( "click ", this.states );
         if ( this.states.rollover.sound != undefined ) {
             this.states.rollover.sound.stop();
             this.states.rollover.sound = undefined;
