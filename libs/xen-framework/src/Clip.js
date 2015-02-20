@@ -410,19 +410,22 @@ this.xen = this.xen || {};
     } );
 
     p._clickHandler = function( event, data ) {
-        console.log( "click " + this.clip.name );
+        console.log( "click " );
         if ( this.states.rollover.sound != undefined ) {
             this.states.rollover.sound.stop();
             this.states.rollover.sound = undefined;
         };
-        if ( this.states.click.noise != undefined ) {
+         console.log( "click2" );
+       if ( this.states.click.noise != undefined ) {
             var noiseId = "B_" + xen.config.moduleID + "_" + this.states.click.noise.code;
 
             this.states.click.sound = createjs.Sound.play( noiseId );
         };
+        console.log( "click3" );
         if ( this.states.click.label != undefined ) {
             this.gotoLabel( this.states.click.label );
         };
+        console.log( "click 4" );
         this._dispatchEvent({type:"click", target: this});
         //this.onEvents.click.call( this );
     }
