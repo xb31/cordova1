@@ -359,7 +359,7 @@ this.xen = this.xen || {};
         //console.log("this.clip.name "+this.clip.name)
         //console.log("this.name "+this.name)
         // console.log( this )
-        console.log( this.onEvents[ event.type ] )
+       // console.log( this.onEvents[ event.type ] )
         if ( this.onEvents[ event.type ] == undefined ) {
             return true;
         } else {
