@@ -78,7 +78,7 @@ define( function() {
         }
 
         this.goScreen = function(screenName){
-            console.log("goScreen", screenName)
+            console.log("goScreen")
             var screen = screens[screenName];
             removeAllScreens();
             stage.addChild( screen.clip );
@@ -88,8 +88,8 @@ define( function() {
                     onEvent: {
                         labelCreated: function( event ) {
                             console.log( "labelCreated " + event.label )
-                            console.log( "_initScreen_"+ screenName )
-                            console.log( this["_initScreen_"+ screenName] )
+                            // console.log( "_initScreen_"+ screenName )
+                            // console.log( this["_initScreen_"+ screenName] )
                             this["_initScreen_"+ screenName].call( mainAlgo );
                         }.bind(this)
                     }
@@ -185,7 +185,7 @@ define( function() {
                 useHandCursor: true,
                 onEvent: {
                     click: function( event ) {
-                        console.log( "click " + event.target.clip.name );
+                        //console.log( "click " + event.target.clip.name );
                         this.goScreen("atelier");
                         
                     }.bind(this),

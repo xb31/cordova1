@@ -39,7 +39,7 @@ p.getInfos = function(){
      * @return {} [description]
      */
     p.initialize = function() {
-        console.log("initialize", this._params)
+        console.log("MediaBank initialize", this._params)
         this._clipBank = new xen.Clip({
             id:this._params.clipId,
             onLoaded: ( function() {
