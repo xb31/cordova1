@@ -144,8 +144,8 @@ define( function() {
         this._initScreen_machine = function() {
             console.log(screens.atelier)
 
-            var bounds = screens.machine.getChildByName("DECOR2").getBounds();
-            console.log(bounds, screens.machine.getChildByName("DECOR2"))
+            // var bounds = screens.machine.getChildByName("DECOR2").getBounds();
+            // console.log(bounds, screens.machine.getChildByName("DECOR2"))
             screens.machine.getChildByName("DECOR2").cache(0,0,800,600);
 
             var btnManette = new xen.Clip( {
