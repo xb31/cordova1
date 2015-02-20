@@ -77,7 +77,7 @@ this.xen = this.xen || {};
                 //--- On instancie le clip
                 this.lib = window[ params.id ];
                 console.log(this);
-                console.log(this.lib[ "CLIP" ]);
+               // console.log(this.lib[ "CLIP" ]);
                 if (this.lib[ "CLIP" ]!= undefined) {
                     this.clip = new this.lib[ "CLIP" ]();
                 }else{
